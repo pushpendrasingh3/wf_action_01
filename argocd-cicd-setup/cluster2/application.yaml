@@ -1,0 +1,30 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cluster2-sample-application
+  namespace: argocd-01
+  # Finalizer that ensures that project is not deleted until it is not referenced by any application
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: cluster2-sample-app-project
+  source:
+    repoURL: https://github.com/pushpendrasingh3/wf_action_01.git
+    targetRevision: HEAD
+    path: argocd-cicd-setup/dev
+    #path: environments/dev/my-app
+  destination:
+    server: https://34.131.169.30
+    namespace: sample
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      allowEmpty: false
+      
+    syncOptions:
+      - Validate=true
+      - CreateNamespace=true
+      - PrunePropagationPolicy=foreground
+      - PruneLast=true
