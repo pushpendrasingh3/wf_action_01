@@ -8,7 +8,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   # Project description
-  description: Learning CICD Project
+  description: Testing and configuring DevOps CICD workflow
 
   # Allow manifests to deploy from any Git repos
   sourceRepos:
@@ -19,7 +19,7 @@ spec:
   destinations:
   - namespace: sample
     server: https://kubernetes.default.svc
-    #name: cluster1
+    #name: mgmt-gke
 
   # Deny all cluster-scoped resources from being created, except for Namespace
   clusterResourceWhitelist:
