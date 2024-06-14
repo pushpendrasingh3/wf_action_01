@@ -22,7 +22,7 @@ spec:
     server: https://35.244.61.26
     #name: mgmt-gke
     #
-  - namespace: my-app
+  - namespace: sample-app
     #server: https://kubernetes.default.svc
     server: https://35.244.55.196
   # Deny all cluster-scoped resources from being created, except for Namespace
