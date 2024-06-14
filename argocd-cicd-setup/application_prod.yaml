@@ -8,14 +8,14 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: prod-sample-app-project
+  project: sample-app-project
   source:
     repoURL: https://github.com/pushpendrasingh3/wf_action_01.git
     targetRevision: HEAD
     path: argocd-cicd-setup/prod
   destination:
     server: https://35.244.55.196
-    namespace: sample
+    namespace: sample-app
   syncPolicy:
     automated:
       prune: true
