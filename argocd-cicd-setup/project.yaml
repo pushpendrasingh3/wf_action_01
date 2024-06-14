@@ -18,7 +18,8 @@ spec:
   # Destination clusters can be identified by 'server', 'name', or both.
   destinations:
   - namespace: sample
-    server: https://kubernetes.default.svc
+    #server: https://kubernetes.default.svc
+    server: https://35.244.61.26
     #name: mgmt-gke
 
   # Deny all cluster-scoped resources from being created, except for Namespace

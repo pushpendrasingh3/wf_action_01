@@ -2,20 +2,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cluster2-sample-application
+  name: prod-sample-application
   namespace: argocd
   # Finalizer that ensures that project is not deleted until it is not referenced by any application
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: cluster2-sample-app-project
+  project: prod-sample-app-project
   source:
     repoURL: https://github.com/pushpendrasingh3/wf_action_01.git
     targetRevision: HEAD
-    path: argocd-cicd-setup/dev
-    #path: environments/dev/my-app
+    path: argocd-cicd-setup/prod
   destination:
-    server: https://34.131.169.30
+    server: https://35.244.55.196
     namespace: sample
   syncPolicy:
     automated:
