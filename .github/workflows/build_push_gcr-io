@@ -12,7 +12,7 @@ jobs:
       - uses: RafikFarhad/push-to-gcr-github-action@v5-rc1
         with:
           gcloud_service_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
-          registry: gcr.io
+          registry: asia.gcr.io #gcr.io
           project_id: ${{ secrets.PROJECT_ID }}
           image_name: server-end
           push_only: true
