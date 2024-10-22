@@ -15,7 +15,7 @@ spec:
     path: argocd-cicd-setup/dev
   destination:
     #server: https://kubernetes.default.svc
-    server: https://35.244.61.26
+    server: https://34.100.226.238
     namespace: sample
   syncPolicy:
     automated:
