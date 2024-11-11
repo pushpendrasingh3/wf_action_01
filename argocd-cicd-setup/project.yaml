@@ -19,12 +19,12 @@ spec:
   destinations:
   - namespace: sample
     #server: https://kubernetes.default.svc
-    server: https://34.100.226.238
+    server: https://34.47.198.97
     #name: mgmt-gke
     #
   - namespace: sample-app
     #server: https://kubernetes.default.svc
-    server: https://34.100.166.138
+    server: https://34.47.151.239
   # Deny all cluster-scoped resources from being created, except for Namespace
   clusterResourceWhitelist:
   - group: ''

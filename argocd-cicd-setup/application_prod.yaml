@@ -14,7 +14,7 @@ spec:
     targetRevision: HEAD
     path: argocd-cicd-setup/prod
   destination:
-    server: https://34.100.166.138
+    server: https://34.47.151.239
     namespace: sample-app
   syncPolicy:
     automated:
