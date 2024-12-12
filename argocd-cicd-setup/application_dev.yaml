@@ -11,7 +11,7 @@ spec:
   project: sample-app-project
   source:
     repoURL: https://github.com/pushpendrasingh3/wf_action_01.git
-    targetRevision: HEAD
+    targetRevision: 1.2.3
     path: argocd-cicd-setup/dev
   destination:
     #server: https://kubernetes.default.svc
