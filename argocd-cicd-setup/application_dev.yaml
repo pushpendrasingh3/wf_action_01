@@ -8,7 +8,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: sample-app-project
+  project: sample-project
   source:
     repoURL: https://github.com/pushpendrasingh3/wf_action_01.git
     targetRevision: 1.2.3
