@@ -11,7 +11,7 @@ spec:
   project: sample-project
   source:
     repoURL: https://github.com/pushpendrasingh3/wf_action_01.git
-    targetRevision: HEAD
+    targetRevision: feature
     path: argocd-cicd-setup/prod
   destination:
     server: https://34.47.151.239
